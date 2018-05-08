@@ -63,7 +63,10 @@ int rviz_camera_ray_tool::CameraRayTool::processMouseEvent(rviz::ViewportMouseEv
 
     pub_.publish(msg);
 
-    return Finished;
+    if (event.shift()) // Hold down shift to pick many points
+      return Render;
+    else
+      return Finished;
   }
 
   return Render;
