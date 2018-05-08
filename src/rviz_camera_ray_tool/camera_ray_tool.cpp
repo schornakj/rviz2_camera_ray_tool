@@ -21,6 +21,7 @@
 rviz_camera_ray_tool::CameraRayTool::CameraRayTool()
 {
   pub_ = nh_.advertise<Ray>("/clicked_ray", 1);
+  shortcut_key_ = 'r';
 }
 
 rviz_camera_ray_tool::CameraRayTool::~CameraRayTool()
