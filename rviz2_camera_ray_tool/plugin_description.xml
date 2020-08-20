@@ -1,0 +1,11 @@
+<library path="rviz2_camera_ray_tool">
+
+  <class name="rviz2_camera_ray_tool/CameraRayTool"
+         type="rviz2_camera_ray_tool::CameraRayTool"
+         base_class_type="rviz_common::Tool">
+    <description>
+      Tool for selecting points (and normals)
+    </description>
+  </class>
+
+</library>
